@@ -7,9 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/Tencent/rapidjson.git
-  git_rev: {{ commit_hash }}
-  git_depth: 1
+  url: https://github.com/Tencent/rapidjson/archive/{{ commit_hash }}.tar.gz
+  sha256: 39f96f17b40f7201042c9b45d6444cb7eae1b7adfb7455412a86f6140450d32d
 
 build:
   number: 0
