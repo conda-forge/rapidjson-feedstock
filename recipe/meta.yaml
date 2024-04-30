@@ -31,7 +31,7 @@ test:
     - if exist %LIBRARY_PREFIX%\lib\cmake\RapidJSON\RapidJSONConfigVersion.cmake (exit 0) else (exit 1)  # [win]
 
 about:
-  home: https://github.com/miloyip/rapidjson
+  home: https://github.com/Tencent/rapidjson
   summary: A fast JSON parser/generator for C++ with both SAX/DOM style API
   license: MIT
   license_file: license.txt
