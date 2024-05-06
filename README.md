@@ -3,7 +3,7 @@ About rapidjson-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rapidjson-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/miloyip/rapidjson
+Home: https://github.com/Tencent/rapidjson
 
 Package license: MIT
 
