@@ -16,14 +16,17 @@ package:
 source:
   url: https://github.com/Tencent/rapidjson/archive/{{ commit_hash }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 2193.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - cmake
     - make
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
