@@ -27,6 +27,7 @@ requirements:
   build:
     - cmake
     - make
+    - ninja
     - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
     - ${{ compiler('cxx') }}
@@ -34,11 +35,17 @@ requirements:
 
 tests:
   - package_contents:
+      files:
+        - if: win
+          then:
+            - Library/cmake/RapidJSONConfig.cmake
+            - Library/cmake/RapidJSONConfigVersion.cmake
+        - if: unix
+          then:
+            - lib/cmake/RapidJSONConfig.cmake
+            - lib/cmake/RapidJSONConfigVersion.cmake
       include: 
         - rapidjson/rapidjson.h
-      lib:
-        - cmake/RapidJSON/RapidJSONConfig.cmake
-        - cmake/RapidJSON/RapidJSONConfigVersion.cmake
   
 about:
   summary: A fast JSON parser/generator for C++ with both SAX/DOM style API

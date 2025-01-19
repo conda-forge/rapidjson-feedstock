@@ -3,13 +3,12 @@
 mkdir build
 cd build
 
-cmake ${CMAKE_ARGS} -DRAPIDJSON_HAS_STDSTRING=ON \
-      -DCMAKE_INSTALL_PREFIX=$PREFIX \
+cmake ${CMAKE_ARGS} \
+      -G "Ninja" \
+      -DRAPIDJSON_HAS_STDSTRING=ON \
       -DRAPIDJSON_BUILD_TESTS=OFF \
       -DRAPIDJSON_BUILD_EXAMPLES=OFF \
       -DRAPIDJSON_BUILD_DOC=OFF \
-      -DCMAKE_VERBOSE_MAKEFILE=ON \
-      -DCMAKE_BUILD_TYPE=release \
       ..
 
-make install
+cmake --install .
