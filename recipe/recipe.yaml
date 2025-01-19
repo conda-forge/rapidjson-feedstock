@@ -26,7 +26,6 @@ build:
 requirements:
   build:
     - cmake
-    - make
     - ninja
     - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
@@ -42,8 +41,8 @@ tests:
             - Library/cmake/RapidJSONConfigVersion.cmake
         - if: unix
           then:
-            - lib/cmake/RapidJSONConfig.cmake
-            - lib/cmake/RapidJSONConfigVersion.cmake
+            - lib/cmake/RapidJSON/RapidJSONConfig.cmake
+            - lib/cmake/RapidJSON/RapidJSONConfigVersion.cmake
       include: 
         - rapidjson/rapidjson.h
   
