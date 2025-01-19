@@ -33,20 +33,13 @@ requirements:
   host:
 
 tests:
-  - script:
-      - if: unix
-        then: test -f ${PREFIX}/include/rapidjson/rapidjson.h
-      - if: unix
-        then: test -f ${PREFIX}/lib/cmake/RapidJSON/RapidJSONConfig.cmake
-      - if: unix
-        then: test -f ${PREFIX}/lib/cmake/RapidJSON/RapidJSONConfigVersion.cmake
-      - if: win
-        then: if exist %LIBRARY_PREFIX%\include\rapidjson\rapidjson.h (exit 0) else (exit 1)
-      - if: win
-        then: if exist %LIBRARY_PREFIX%\lib\cmake\RapidJSON\RapidJSONConfig.cmake (exit 0) else (exit 1)
-      - if: win
-        then: if exist %LIBRARY_PREFIX%\lib\cmake\RapidJSON\RapidJSONConfigVersion.cmake (exit 0) else (exit 1)
-
+  - package_contents:
+      include: 
+        - rapidjson/rapidjson.h
+      lib:
+        - cmake/RapidJSON/RapidJSONConfig.cmake
+        - cmake/RapidJSON/RapidJSONConfigVersion.cmake
+  
 about:
   summary: A fast JSON parser/generator for C++ with both SAX/DOM style API
   license: MIT
@@ -60,3 +53,4 @@ extra:
     - JohanMabille
     - xhochy
     - zklaus
+    - baszalmstra
