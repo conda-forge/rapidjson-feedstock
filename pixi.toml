@@ -3,10 +3,10 @@
 # -*- mode: toml -*-
 
 [project]
-name = "tmpr9l3kvt5"
-version = "3.45.3"
-description = "Pixi configuration for conda-forge/tmpr9l3kvt5"
-authors = ["@conda-forge/t"]
+name = "rapidjson-feedstock"
+version = "3.45.4"
+description = "Pixi configuration for conda-forge/rapidjson-feedstock"
+authors = ["@conda-forge/rapidjson"]
 channels = ["conda-forge"]
 platforms = ['linux-64', 'osx-64', 'win-64']
 
