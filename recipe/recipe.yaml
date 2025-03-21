@@ -30,7 +30,6 @@ requirements:
     - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
     - ${{ compiler('cxx') }}
-  host:
 
 tests:
   - package_contents:
