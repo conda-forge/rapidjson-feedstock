@@ -6,9 +6,9 @@
 # and use this information to update the following three lines.
 context:
   name: rapidjson
-  version: 1.1.0.post20240409
-  commit_hash: ab1842a2dae061284c0a62dca1cc6d5e7e37e346
-  sha256: 39f96f17b40f7201042c9b45d6444cb7eae1b7adfb7455412a86f6140450d32d
+  version: 1.1.0.post20250205
+  commit_hash: 24b5e7a8b27f42fa16b96fc70aade9106cf7102f
+  sha256: 2d2601a82d2d3b7e143a3c8d43ef616671391034bc46891a9816b79cf2d3e7a8
 
 package:
   name: ${{ name|lower }}
@@ -21,7 +21,7 @@ source:
     - 2193.patch
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
