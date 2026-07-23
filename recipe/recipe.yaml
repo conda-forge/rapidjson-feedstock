@@ -5,13 +5,12 @@
 # find the checksum of the associated archive tarball (see source url below),
 # and use this information to update the following three lines.
 context:
-  name: rapidjson
   version: 1.1.0.post20250205
   commit_hash: 24b5e7a8b27f42fa16b96fc70aade9106cf7102f
   sha256: 2d2601a82d2d3b7e143a3c8d43ef616671391034bc46891a9816b79cf2d3e7a8
 
 package:
-  name: ${{ name|lower }}
+  name: rapidjson
   version: ${{ version }}
 
 source:
