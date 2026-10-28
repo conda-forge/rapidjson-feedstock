@@ -41,9 +41,9 @@ tests:
           then:
             - lib/cmake/RapidJSON/RapidJSONConfig.cmake
             - lib/cmake/RapidJSON/RapidJSONConfigVersion.cmake
-      include: 
+      include:
         - rapidjson/rapidjson.h
-  
+
 about:
   summary: A fast JSON parser/generator for C++ with both SAX/DOM style API
   license: MIT
